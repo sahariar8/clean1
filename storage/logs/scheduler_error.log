@@ -1,0 +1,4 @@
+[2024-01-08 09:03:51] local.ERROR: $$$ -> api output  : Report generation failed.  
+[2024-01-08 09:03:51] local.ERROR: $$$ -> pdf generation failed for order_code: 236399-78c2de22-f509-484f-a5c6-11263fdd3b99  
+[2024-01-08 09:11:26] local.ERROR: $$$ -> api output  : https://s3.us-east-1.amazonaws.com/stratus-report/generate-236399-78c2de22-f509-484f-a5c6-11263fdd3b99.pdf  
+[2024-01-08 09:13:43] local.ERROR: $$$ -> api output  : https://s3.us-east-1.amazonaws.com/stratus-report/generate-236398-4fcb2a99-3863-4c8c-9ec5-5b3a7fab969c.pdf  
