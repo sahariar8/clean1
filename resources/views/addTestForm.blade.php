@@ -14,7 +14,7 @@
               <input type="hidden" id="edit_id" name="edit_id">
               <div class="form-group mb-3">
                 <label for="inputTestName">{{ __('Test Name') }}</label>
-                <input type="text" class="form-control" id="inputTestName" name="test_name" required minlength="2" value="{{ old('test_name') }}">
+                <input type="text" class="form-control" id="inputTestName" name="test_name" minlength="2" value="{{ old('test_name') }}">
                 <span id="spanTestName" class="spanErrorText" style="color:red;"></span>
                 @if ($errors->has('test_name'))
                       <span class="text-danger">{{ $errors->first('test_name') }}</span>
@@ -23,7 +23,7 @@
 
               <div class="form-group mb-3">
                 <label for="inputclass">Class</label>
-                <input type="text" class="form-control" id="inputclass" name="class" required minlength="2" value="{{ old('class') }}">
+                <input type="text" class="form-control" id="inputclass" name="class" minlength="2" value="{{ old('class') }}">
                 <span id="spanClassName" class="spanErrorText" style="color:red;"></span>
                 @if ($errors->has('class'))
                       <span class="text-danger">{{ $errors->first('class') }}</span>
@@ -37,7 +37,7 @@
 
               <div class="form-group mb-3">
                 <label for="inputCutoff">{{ __('Parent') }}</label>
-                <input type="text" class="form-control" id="inputCutoff" name="parent" required value="{{ old('parent') }}">
+                <input type="text" class="form-control" id="inputCutoff" name="parent" value="{{ old('parent') }}">
                 <span id="spanCutoff" class="spanErrorText" style="color:red;"></span>
                 @if ($errors->has('parent'))
                       <span class="text-danger">{{ $errors->first('parent') }}</span>
@@ -46,7 +46,7 @@
 
               <div class="form-group mb-3">
                 <label for="inputRange">{{ __('Metabolite') }}</label>
-                <input type="text" class="form-control" id="inputRange" name="metabolite" required value="{{ old('metabolite') }}"> 
+                <input type="text" class="form-control" id="inputRange" name="metabolite" value="{{ old('metabolite') }}"> 
                 <span id="spanTestRange" class="spanErrorText" style="color:red;"></span>
                 @if ($errors->has('metabolite'))
                       <span class="text-danger">{{ $errors->first('metabolite') }}</span>
